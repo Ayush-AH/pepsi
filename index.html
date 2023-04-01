@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="can">
+        <img class="can1" src="pepsi1.png" onclick="imgSlider('pepsi1.png');bgColorChange('rgb(197, 20, 47)')" alt="">
+        <img class="can1" src="pepsi2.png" onclick="imgSlider('pepsi2.png');bgColorChange('grey')" alt="">
+        <img class="can1" src="pepsi3.png" onclick="imgSlider('pepsi3.png');bgColorChange('black')" alt="">
+    </div>
+    <div class="logo">
+        <ul >
+            <li><a href=""> <img src="https://cdn-icons-png.flaticon.com/512/3128/3128208.png" alt=""></a></li>
+            <li><a href=""> <img src="https://cdn-icons-png.flaticon.com/128/2111/2111738.png" alt=""></a></li>
+            <li><a href=""><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt=""></a></li>
+        </ul>
+ </div>
+       
+    <div class="main">
+        <div class="navbar">
+            <div class="nav-pt1">
+                <img src="pepsi-logo.png" alt="">
+            </div>
+            <div class="nav-pt2">
+                <ul class="list">
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>What's New</li>
+                    <li>Newsletter</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h3>That's What</h3>
+                <h1>i like</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati provident, qui vitae eius nobis, aperiam vel voluptas deserunt ab accusantium architecto. Magni facilis magnam fuga!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos incidunt quas, laborum distinctio molestias quam adipisci optio. Deleniti tempore rerum explicabo non velit reprehenderit amet ipsa.
+                </p>
+                <a href="">view all products</a>
+            </div>
+            <div class="right">
+                <img class="pepsi" src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-cherry-v2.png" alt="">
+            </div>
+        </div>
+    </div>
+   <script>
+    function imgSlider(anything){
+        document.querySelector(".pepsi").src = anything;
+    }
+    function bgColorChange(color){
+        var main =  document.querySelector(".main");
+        main.style.background = color;
+    }
+   </script>
+</body>
+</html>
